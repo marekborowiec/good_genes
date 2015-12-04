@@ -1,5 +1,5 @@
-Sequence alignment statistics were calculated using [AMAS]( https://peerj.com/preprints/1355/). The version used is v0.95, GitHub commit [84a679a]( https://github.com/marekborowiec/AMAS/commit/84a679ac71bc64ef94cb9d606dd535ae82226e25).
-The statistics based on trees or on trees and sequences (regression) were calculated in R using `ape` (Paradis 2012) and `seqinr` (Charif et al. 2007) libraries. The code used is in `tree_props.R`. It is a slightly modified version of the code for the metazoan phylogeny paper (Borowiec 2015; [GitHub]( https://github.com/marekborowiec/metazoan_phylogenomics)) with “clock-likeness” measure added.
+Sequence alignment statistics were calculated using [AMAS](https://peerj.com/preprints/1355/). The version used is v0.95, Git commit [84a679a](https://github.com/marekborowiec/AMAS/commit/84a679ac71bc64ef94cb9d606dd535ae82226e25).
+The statistics based on trees or on trees and sequences (regression) were calculated in R using `ape` (Paradis 2012) and `seqinr` (Charif et al. 2007) libraries. The code used is in `tree_props.R`. It is a slightly modified version of the code for the metazoan phylogeny paper (Borowiec 2015; [GitHub](https://github.com/marekborowiec/metazoan_phylogenomics/blob/master/gene_stats.R)) with “clock-likeness” measure added.
 Average sequence heterogeneity was calculated using p4 (Foster 2004). This is the `aln_hetero.py` script.
 A brief explanation of what is being calculated and how in the file `good_gene_stats.csv`; For each alignment/corresponding tree I calculated:
 * alignment length
