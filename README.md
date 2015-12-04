@@ -29,4 +29,5 @@ Borowiec, M. L., Lee, E. K., Chiu, J. C., & Plachetzki, D. C. 2015. Extracting p
 Charif D, Lobry JR. 2007. SeqinR 1.0-2: a contributed package to the R project for statistical computing devoted to biological sequences retrieval and analysis in Structural approaches to sequence evolution: Molecules, networks, populations (U. Bastolla, M. Porto, H.E. Roman and M. Vendruscolo Eds.) Biological and Medical Physics, Biomedical Engineering; pp 207–232.
 
 Foster, P. G. 2004. Modeling compositional heterogeneity. Systematic Biology; 53(3):485–495.
+
 Paradis E, Claude J, Strimmer K. 2004. APE: Analyses of phylogenetics and evolution in R language. Bioinformatics; 20:289–90.
