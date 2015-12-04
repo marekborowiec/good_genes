@@ -17,12 +17,14 @@ A brief explanation of what is being calculated and how in the file `good_gene_s
 * average matrix heterogeneity (this is mean of Euclidean distance matrix of compositions)
 * average bootstrap
 * average branch length (including internal branches; possible rate proxy, lower number means slower-evolving)
-* average uncorrected p-distance
 * “clocklikeness” score (this is a measure how close to ultrametric a tree is; the algorithm finds a root that minimizes coefficient of variation in root to tip distances and returns that value; lower value is more clock-like: ultrametric tree has a score of 0)
+* average uncorrected p-distance
 * regression slope of identity distances plotted against branch lengths (the higher the value the closer the alignment is fitting to linear regression, which means lower saturation potential)
 * R-squared of regression (as above, higher means better fit to linear regression and less saturation potential)
 
-Borowiec, M. L., Lee, E. K., Chiu, J. C., & Plachetzki, D. C. 2015. Extracting phylogenetic signal and accounting for bias in whole-genome data sets supports the Ctenophora as sister to remaining Metazoa. BMC Genomics; 16(1):987.
-Charif D, Lobry JR. 2007. SeqinR 1.0-2: a contributed package to the R project for statistical computing devoted to biological sequences retrieval and analysis in Structural approaches to sequence evolution: Molecules, networks, populations (U. Bastolla, M. Porto, H.E. Roman and M. Vendruscolo Eds.) Biological and Medical Physics, Biomedical Engineering; pp 207–232.
-Foster, P. G. 2004. Modeling compositional heterogeneity. Systematic Biology; 53(3):485–495.
+    Borowiec, M. L., Lee, E. K., Chiu, J. C., & Plachetzki, D. C. 2015. Extracting phylogenetic signal and accounting for bias in whole-genome data sets supports the Ctenophora as sister to remaining Metazoa. BMC Genomics; 16(1):987.
+
+    Charif D, Lobry JR. 2007. SeqinR 1.0-2: a contributed package to the R project for statistical computing devoted to biological sequences retrieval and analysis in Structural approaches to sequence evolution: Molecules, networks, populations (U. Bastolla, M. Porto, H.E. Roman and M. Vendruscolo Eds.) Biological and Medical Physics, Biomedical Engineering; pp 207–232.
+
+    Foster, P. G. 2004. Modeling compositional heterogeneity. Systematic Biology; 53(3):485–495.
 Paradis E, Claude J, Strimmer K. 2004. APE: Analyses of phylogenetics and evolution in R language. Bioinformatics; 20:289–90.
