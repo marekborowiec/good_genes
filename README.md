@@ -22,6 +22,21 @@ A brief explanation of what is being calculated and how in the file `good_gene_s
 * regression slope of identity distances plotted against branch lengths (the higher the value the closer the alignment is fitting to linear regression, which means lower saturation potential)
 * R-squared of regression (as above, higher means better fit to linear regression and less saturation potential)
 
+The code in `plotting_correlations.R` helps visualize correlations among 12 variables:
+
+* score
+* normalized score
+* alignment length
+* percent missing
+* proportion of parsimony informative sites
+* GC content
+* average matrix heterogeneity
+* average bootstrap
+* average branch length
+* clocklikeness
+* average p-distance
+* R-squared of regression
+
 To cite:
 
 Borowiec, M. L., Lee, E. K., Chiu, J. C., & Plachetzki, D. C. 2015. Extracting phylogenetic signal and accounting for bias in whole-genome data sets supports the Ctenophora as sister to remaining Metazoa. BMC Genomics; 16(1):987.
