@@ -10,17 +10,17 @@ library("data.table")
 
 ### SET WORKING DIRECTORY ###
 
-setwd("/home/mlb/Phylo-data/Good_genes/")
+setwd("/media/mlb/Seagate Backup Plus Drive/Good_genes/new")
 
 gene_stats <- read.csv("stats_with_ranks.csv")
 
 names(gene_stats)
 
-to_plot <-subset(gene_stats, select=c(Score,Norm_score,Align_length,
-                                      Missing_percent,Prop_pars_inf,
-                                      GC_content,Avg_hetero,Avg_boot,
-                                      Avg_br_length,Clocklikeness,Avg_p_dist,
-                                      R_squared))
+to_plot <-subset(gene_stats, select=c(Gene_score,Score_corr,Aln_len,Missing_percent,
+                                      Prop_pars_inf,GC_content,
+                                      Avg_hetero,Avg_boot,Clocklikeness,
+                                      Avg_br_len,Avg_p_dist,Avg_entropy,
+                                      Slope))
 
 
 

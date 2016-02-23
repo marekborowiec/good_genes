@@ -14,10 +14,10 @@ library("data.table")
 
 ### SET WORKING DIRECTORY ###
 
-setwd("/home/mlb/Phylo-data/Good_genes/")
+setwd("/media/mlb/Seagate Backup Plus Drive/Good_genes/new")
 
-trees_dir <- file.path("./numbered_trees/")
-aln_dir <- file.path("./numbered_alignments/")
+trees_dir <- file.path("./trees_rerooted/")
+aln_dir <- file.path("./masked_loci/")
 
 trees_files <- dir(path=trees_dir, pattern="*tre")
 aln_files <- dir(path=aln_dir, pattern="*fas")
@@ -51,6 +51,7 @@ average_bootstrap <- lapply(trees_files, Avg_support)
 average_bootstrap <- data.frame(matrix(unlist(average_bootstrap), nrow=(length(average_bootstrap)), byrow=T))
 colnames(average_bootstrap) <- c("Locus", "Average_bootstrap")
 
+write.csv(average_bootstrap, file="avg_bootstrap.csv")
 
 ### AVERAGE BRANCH LENGTHS ###
 
@@ -77,6 +78,7 @@ br_lengths <- lapply(trees_files, Br_length.trees)
 br_lengths <- data.frame(matrix(unlist(br_lengths), nrow=(length(br_lengths)), byrow=T))
 colnames(br_lengths) <- c("Locus", "Average_branch_length")
 
+write.csv(br_lengths, file="avg_br_len.csv")
 
 ### CLOCKLIKENESS ###
 
@@ -114,6 +116,7 @@ cv_clocklikeness <- lapply(trees_files, Clocklikeness)
 cv_clocklikeness <- data.frame(matrix(unlist(cv_clocklikeness), nrow=(length(cv_clocklikeness)), byrow=T))
 colnames(cv_clocklikeness) <- c("Locus", "Clocklikeness")
 
+write.csv(cv_clocklikeness, "cv_clocklikeness.csv")
 
 ### SATURATION ###
 
@@ -193,6 +196,8 @@ saturation_table <- as.data.frame(saturation_table)
 colnames(saturation_table) <- c("Locus","Avg_p_dist","Slope","R_squared")
 row.names(saturation_table) <- NULL
 
+ds.saturation <- data.frame(lapply(saturation_table, as.character), stringsAsFactors=F)
+write.csv(ds.saturation, "saturation_table.csv")
 
 ### PLOTTING GENE TREES ### 
 
