@@ -7,7 +7,7 @@ import glob, p4
 p4.var.doCheckForDuplicateSequences = False
 
 # get all alignments
-alignments = glob.glob('./numbered_alignments/*fas')
+alignments = glob.glob('./*fas')
 
 # calculate mean
 def mean(a):

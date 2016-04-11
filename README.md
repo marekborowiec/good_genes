@@ -1,4 +1,4 @@
-Sequence alignment statistics were calculated using [AMAS](https://peerj.com/preprints/1355/). The version used is v0.95, Git commit [84a679a](https://github.com/marekborowiec/AMAS/commit/84a679ac71bc64ef94cb9d606dd535ae82226e25).
+Sequence alignment statistics were calculated using [AMAS](https://peerj.com/articles/1660/). The version used is v0.95, Git commit [84a679a](https://github.com/marekborowiec/AMAS/commit/84a679ac71bc64ef94cb9d606dd535ae82226e25).
 The statistics based on trees or on trees and sequences (regression) were calculated in R using `ape` (Paradis 2012) and `seqinr` (Charif et al. 2007) libraries. The code used is in `tree_props.R`. It is a slightly modified version of the code for the metazoan phylogeny paper (Borowiec 2015; [GitHub](https://github.com/marekborowiec/metazoan_phylogenomics/blob/master/gene_stats.R)) with “clock-likeness” measure added.
 Average sequence heterogeneity was calculated using p4 (Foster 2004). This is the `aln_hetero.py` script.
 A brief explanation of what is being calculated and how in the file `good_gene_stats.csv`; For each alignment/corresponding tree I calculated:
@@ -38,6 +38,8 @@ The code in `plotting_correlations.R` helps visualize correlations among 12 vari
 * R-squared of regression
 
 To cite:
+```
+Borowiec, M.L. 2016. AMAS: a fast tool for alignment manipulation and computing of summary statistics. PeerJ 4:e1660.
 
 Borowiec, M. L., Lee, E. K., Chiu, J. C., & Plachetzki, D. C. 2015. Extracting phylogenetic signal and accounting for bias in whole-genome data sets supports the Ctenophora as sister to remaining Metazoa. BMC Genomics; 16(1):987.
 
@@ -46,3 +48,4 @@ Charif D, Lobry JR. 2007. SeqinR 1.0-2: a contributed package to the R project f
 Foster, P. G. 2004. Modeling compositional heterogeneity. Systematic Biology; 53(3):485–495.
 
 Paradis E, Claude J, Strimmer K. 2004. APE: Analyses of phylogenetics and evolution in R language. Bioinformatics; 20:289–90.
+```
